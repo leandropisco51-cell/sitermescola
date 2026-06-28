@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="rmescola - O sistema de gestão escolar mais seguro, fácil de usar e econômico do mercado. Teste gratuitamente e transforme a administração da sua escola hoje mesmo.">
+    <title>rmescola | Sistema de Gestão Escolar Inteligente, Seguro e Acessível</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container navbar-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">rm</span>escola
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#beneficios" class="nav-link">Benefícios</a></li>
+                    <li><a href="#funcionalidades" class="nav-link">Funcionalidades</a></li>
+                    <li><a href="#economia" class="nav-link">Economia</a></li>
+                    <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                    <li><a href="#faq" class="nav-link">Dúvidas</a></li>
+                    <li><a href="#contato" class="btn btn-primary btn-nav">Teste Grátis</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge">🚀 Teste Gratuitamente por 14 dias</span>
+                    <h1>A gestão escolar que sua escola precisa, pelo preço que ela pode pagar.</h1>
+                    <p class="hero-subtitle">
+                        O sistema de gestão escolar <strong>mais seguro, fácil de usar</strong> e projetado especificamente para <strong>não afetar as finanças</strong> da sua escola. Simplifique matrículas, financeiro e boletins em um só lugar.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contato" class="btn btn-primary btn-lg">Começar Teste Grátis</a>
+                        <a href="#beneficios" class="btn btn-secondary btn-lg">Conhecer Benefícios</a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="trust-stars">
+                            ★★★★★
+                        </div>
+                        <p class="trust-text">Avaliado com 4.9/5 estrelas por diretores e gestores</p>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-mockup-wrapper">
+                        <!-- Custom SVG Dashboard Mockup representing RM Escola App -->
+                        <svg viewBox="0 0 800 500" class="dashboard-mockup" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background Window -->
+                            <rect width="800" height="500" rx="16" fill="#0b0f19" stroke="#1e293b" stroke-width="2"/>
+                            
+                            <!-- Window Header -->
+                            <rect width="800" height="48" rx="16" fill="#1e293b"/>
+                            <circle cx="24" cy="24" r="6" fill="#ef4444" />
+                            <circle cx="44" cy="24" r="6" fill="#f59e0b" />
+                            <circle cx="64" cy="24" r="6" fill="#10b981" />
+                            <text x="400" y="30" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="14" text-anchor="middle" font-weight="500">rmescola - Painel de Controle</text>
+                            
+                            <!-- Sidebar -->
+                            <rect x="0" y="48" width="180" height="452" fill="#0f172a" />
+                            <rect x="15" y="70" width="150" height="30" rx="6" fill="#6366f1" fill-opacity="0.15" />
+                            <rect x="30" y="80" width="10" height="10" rx="2" fill="#6366f1" />
+                            <rect x="52" y="81" width="80" height="8" rx="4" fill="#6366f1" />
+                            
+                            <!-- Sidebar Items -->
+                            <g transform="translate(0, 120)">
+                                <circle cx="35" cy="15" r="5" fill="#475569" />
+                                <rect x="52" y="11" width="90" height="8" rx="4" fill="#475569" />
+                                
+                                <circle cx="35" cy="45" r="5" fill="#475569" />
+                                <rect x="52" y="41" width="70" height="8" rx="4" fill="#475569" />
+                                
+                                <circle cx="35" cy="75" r="5" fill="#475569" />
+                                <rect x="52" y="71" width="80" height="8" rx="4" fill="#475569" />
+
+                                <circle cx="35" cy="105" r="5" fill="#475569" />
+                                <rect x="52" y="101" width="60" height="8" rx="4" fill="#475569" />
+                            </g>
+
+                            <!-- Main Dashboard Area -->
+                            <!-- Header Info -->
+                            <text x="210" y="90" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="700">Olá, Administrador</text>
+                            <text x="210" y="110" fill="#64748b" font-family="'Inter', sans-serif" font-size="12">Visão geral da instituição hoje</text>
+
+                            <!-- Stat Cards -->
+                            <g transform="translate(210, 130)">
+                                <!-- Card 1 -->
+                                <rect width="170" height="85" rx="10" fill="#1e293b" />
+                                <text x="15" y="25" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" font-weight="600">TOTAL ALUNOS</text>
+                                <text x="15" y="55" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800">1.248</text>
+                                <text x="15" y="75" fill="#10b981" font-family="'Inter', sans-serif" font-size="10" font-weight="600">▲ +12% este mês</text>
+
+                                <!-- Card 2 -->
+                                <rect x="185" width="170" height="85" rx="10" fill="#1e293b" />
+                                <text x="200" y="25" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" font-weight="600">MENSALIDADES</text>
+                                <text x="200" y="55" fill="#10b981" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800">98.4%</text>
+                                <text x="200" y="75" fill="#10b981" font-family="'Inter', sans-serif" font-size="10" font-weight="600">Adimplência Recorde</text>
+
+                                <!-- Card 3 -->
+                                <rect x="370" width="200" height="85" rx="10" fill="#1e293b" />
+                                <text x="385" y="25" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" font-weight="600">PRESENÇA DIÁRIA</text>
+                                <text x="385" y="55" fill="#6366f1" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800">96.2%</text>
+                                <text x="385" y="75" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">Média geral da semana</text>
+                            </g>
+
+                            <!-- Charts & List -->
+                            <!-- Graph Area -->
+                            <rect x="210" y="235" width="355" height="235" rx="12" fill="#1e293b" />
+                            <text x="230" y="265" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700">Fluxo de Caixa (Mensal)</text>
+                            
+                            <!-- Graph lines & bars -->
+                            <g transform="translate(230, 280)">
+                                <!-- Axes -->
+                                <line x1="0" y1="130" x2="310" y2="130" stroke="#475569" stroke-width="1" />
+                                <!-- Grid Lines -->
+                                <line x1="0" y1="90" x2="310" y2="90" stroke="#334155" stroke-dasharray="4" />
+                                <line x1="0" y1="50" x2="310" y2="50" stroke="#334155" stroke-dasharray="4" />
+                                <line x1="0" y1="10" x2="310" y2="10" stroke="#334155" stroke-dasharray="4" />
+                                
+                                <!-- Bar 1 -->
+                                <rect x="20" y="30" width="25" height="100" rx="3" fill="#6366f1" />
+                                <text x="32" y="145" fill="#64748b" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Mar</text>
+                                <!-- Bar 2 -->
+                                <rect x="75" y="50" width="25" height="80" rx="3" fill="#6366f1" />
+                                <text x="87" y="145" fill="#64748b" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Abr</text>
+                                <!-- Bar 3 -->
+                                <rect x="130" y="20" width="25" height="110" rx="3" fill="#6366f1" />
+                                <text x="142" y="145" fill="#64748b" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Mai</text>
+                                <!-- Bar 4 -->
+                                <rect x="185" y="10" width="25" height="120" rx="3" fill="#10b981" />
+                                <text x="197" y="145" fill="#64748b" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Jun</text>
+                                <!-- Bar 5 -->
+                                <rect x="240" y="15" width="25" height="115" rx="3" fill="#10b981" />
+                                <text x="252" y="145" fill="#64748b" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Jul</text>
+                            </g>
+
+                            <!-- Mini Sidebar List (Alerts / Notifications) -->
+                            <rect x="580" y="235" width="200" height="235" rx="12" fill="#1e293b" />
+                            <text x="595" y="265" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700">Atividades Recentes</text>
+                            
+                            <g transform="translate(595, 285)">
+                                <!-- Notification 1 -->
+                                <circle cx="10" cy="15" r="6" fill="#10b981" />
+                                <text x="25" y="13" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="10" font-weight="600">Matrícula Confirmada</text>
+                                <text x="25" y="25" fill="#64748b" font-family="'Inter', sans-serif" font-size="8">Ana Silva - 5º Ano A (Há 2 min)</text>
+
+                                <!-- Notification 2 -->
+                                <circle cx="10" cy="55" r="6" fill="#3b82f6" />
+                                <text x="25" y="53" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="10" font-weight="600">Boletim Atualizado</text>
+                                <text x="25" y="65" fill="#64748b" font-family="'Inter', sans-serif" font-size="8">Prof. Marcos - Física (Há 15 min)</text>
+
+                                <!-- Notification 3 -->
+                                <circle cx="10" cy="95" r="6" fill="#f59e0b" />
+                                <text x="25" y="93" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="10" font-weight="600">Mensalidade Paga (PIX)</text>
+                                <text x="25" y="105" fill="#64748b" font-family="'Inter', sans-serif" font-size="8">Responsável Pedro (Há 30 min)</text>
+                            </g>
+                        </svg>
+                        <div class="mockup-floating-badge badge-1">
+                            <span class="badge-icon">🔒</span>
+                            <div>
+                                <strong>LGPD 100%</strong>
+                                <span>Dados protegidos</span>
+                            </div>
+                        </div>
+                        <div class="mockup-floating-badge badge-2">
+                            <span class="badge-icon">⚡</span>
+                            <div>
+                                <strong>Interface Ágil</strong>
+                                <span>Fácil e rápida</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Waves vector divider -->
+            <div class="hero-wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1130.5,120.2,1065.07,113.8,985.66,92.83Z" fill="#ffffff"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Três Pilares / Benefícios -->
+        <section class="section benefits" id="beneficios">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">Vantagens rmescola</span>
+                    <h2>A solução completa que cabe no seu orçamento</h2>
+                    <p class="section-subtitle">Diga adeus às planilhas complexas, riscos de perda de dados e sistemas caros. Nós criamos a ferramenta definitiva para a sua escola decolar.</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <!-- Pilar Segurança -->
+                    <div class="card benefit-card animate-on-scroll">
+                        <div class="benefit-icon icon-security">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h3>Segurança em Primeiro Lugar</h3>
+                        <p>Seus dados escolares estão protegidos sob criptografia militar em servidores de nuvem de alta segurança. Realizamos backups automáticos diários para que você nunca perca históricos escolares, relatórios de notas ou dados financeiros confidenciais.</p>
+                        <ul class="benefit-bullets">
+                            <li>Criptografia de dados ponta a ponta</li>
+                            <li>Backups automáticos diários em nuvem</li>
+                            <li>Em conformidade estrita com a LGPD</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pilar Facilidade -->
+                    <div class="card benefit-card animate-on-scroll">
+                        <div class="benefit-icon icon-easy">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 8v4l3 3"/>
+                            </svg>
+                        </div>
+                        <h3>Extremamente Fácil de Usar</h3>
+                        <p>Interface moderna, limpa e pensada para todos os perfis. Desde a secretaria até os pais e professores, qualquer pessoa consegue usar o sistema sem complicação ou necessidade de treinamentos exaustivos e demorados.</p>
+                        <ul class="benefit-bullets">
+                            <li>Painel intuitivo e livre de poluição visual</li>
+                            <li>Acesso facilitado para pais por celular</li>
+                            <li>Suporte humanizado e ágil</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pilar Finanças -->
+                    <div class="card benefit-card animate-on-scroll">
+                        <div class="benefit-icon icon-finance">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="1" x2="12" y2="23"/>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                            </svg>
+                        </div>
+                        <h3>Zero Impacto nas Finanças</h3>
+                        <p>Criamos um modelo comercial inovador que cabe perfeitamente no planejamento financeiro de escolas de todos os portes. Não cobramos taxas ocultas de implantação ou taxas de suporte. A economia de papel e de horas de trabalho paga o sistema sozinho.</p>
+                        <ul class="benefit-bullets">
+                            <li>Mensalidades fixas sem taxas surpresas</li>
+                            <li>Substitui múltiplos softwares e custos extras</li>
+                            <li>Retorno sobre o investimento (ROI) imediato</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Funcionalidades Completas -->
+        <section class="section functionalities bg-light" id="funcionalidades">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">O que o sistema faz?</span>
+                    <h2>Todas as ferramentas de gestão unificadas</h2>
+                    <p class="section-subtitle">Administre sua escola com tranquilidade através de um conjunto completo de recursos inteligentes.</p>
+                </div>
+
+                <div class="functionalities-layout">
+                    <div class="tabs-container">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="pedagogico">🎓 Pedagógico</button>
+                            <button class="tab-btn" data-tab="financeiro">💰 Financeiro</button>
+                            <button class="tab-btn" data-tab="comunicacao">💬 Comunicação</button>
+                            <button class="tab-btn" data-tab="secretaria">📝 Secretaria</button>
+                        </div>
+
+                        <div class="tab-content-wrapper">
+                            <!-- Tab Pedagogico -->
+                            <div class="tab-content active" id="pedagogico">
+                                <div class="tab-grid">
+                                    <div class="tab-text">
+                                        <h3>Acompanhamento Escolar Completo</h3>
+                                        <p>Permita que professores publiquem conteúdos, gerenciem o diário de classe digital, lancem notas e frequências com apenas alguns clicks, reduzindo o trabalho administrativo dos docentes.</p>
+                                        <ul class="list-checked">
+                                            <li>Boletim escolar digital de fácil consulta</li>
+                                            <li>Frequência de alunos integrada ao aplicativo de pais</li>
+                                            <li>Planejamento de aulas e conteúdo programático online</li>
+                                            <li>Relatórios automáticos de desempenho escolar</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-visual">
+                                        <div class="illustration-box">
+                                            <!-- SVG Illustration - Pedagogical -->
+                                            <svg viewBox="0 0 400 300" class="tab-svg" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="400" height="300" rx="8" fill="#e0e7ff" />
+                                                <circle cx="200" cy="110" r="45" fill="#4f46e5" />
+                                                <!-- Hat icon -->
+                                                <polygon points="200,85 240,105 200,125 160,105" fill="#ffffff"/>
+                                                <polygon points="180,115 180,135 200,140 220,135 220,115" fill="#ffffff"/>
+                                                <!-- List details -->
+                                                <rect x="70" y="185" width="260" height="15" rx="4" fill="#ffffff"/>
+                                                <rect x="70" y="210" width="260" height="15" rx="4" fill="#ffffff"/>
+                                                <rect x="70" y="235" width="180" height="15" rx="4" fill="#ffffff"/>
+                                                <!-- Small decoration -->
+                                                <circle cx="90" cy="192.5" r="4" fill="#4f46e5"/>
+                                                <circle cx="90" cy="217.5" r="4" fill="#4f46e5"/>
+                                                <circle cx="90" cy="242.5" r="4" fill="#4f46e5"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tab Financeiro -->
+                            <div class="tab-content" id="financeiro">
+                                <div class="tab-grid">
+                                    <div class="tab-text">
+                                        <h3>Controle Financeiro de Ponta a Ponta</h3>
+                                        <p>Reduza a inadimplência com cobranças automáticas de mensalidades escolares, emissão facilitada de boletos bancários homologados e PIX, e tenha visão total do caixa.</p>
+                                        <ul class="list-checked">
+                                            <li>Emissão simplificada de PIX e boletos</li>
+                                            <li>Alertas automáticos de cobrança para inadimplentes</li>
+                                            <li>Fluxo de caixa consolidado e contas a pagar/receber</li>
+                                            <li>Geração de relatórios financeiros mensais e anuais</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-visual">
+                                        <div class="illustration-box">
+                                            <!-- SVG Illustration - Finance -->
+                                            <svg viewBox="0 0 400 300" class="tab-svg" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="400" height="300" rx="8" fill="#d1fae5" />
+                                                <circle cx="200" cy="110" r="45" fill="#059669" />
+                                                <text x="200" y="123" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="40" text-anchor="middle">$</text>
+                                                <!-- Graph bars -->
+                                                <rect x="100" y="210" width="30" height="50" rx="3" fill="#059669"/>
+                                                <rect x="150" y="180" width="30" height="80" rx="3" fill="#059669"/>
+                                                <rect x="200" y="195" width="30" height="65" rx="3" fill="#10b981"/>
+                                                <rect x="250" y="150" width="30" height="110" rx="3" fill="#10b981"/>
+                                                <line x1="80" y1="260" x2="320" y2="260" stroke="#047857" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tab Comunicacao -->
+                            <div class="tab-content" id="comunicacao">
+                                <div class="tab-grid">
+                                    <div class="tab-text">
+                                        <h3>Aproximação de Pais e Escola</h3>
+                                        <p>Substitua a ultrapassada agenda física de papel por avisos eletrônicos instantâneos. Melhore a comunicação com os responsáveis e garanta o engajamento na vida dos alunos.</p>
+                                        <ul class="list-checked">
+                                            <li>Notificações e avisos no celular (Push/WhatsApp)</li>
+                                            <li>Calendário de eventos, avaliações e datas importantes</li>
+                                            <li>Acesso a ocorrências pedagógicas de forma reservada</li>
+                                            <li>Canal direto de atendimento com a secretaria</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-visual">
+                                        <div class="illustration-box">
+                                            <!-- SVG Illustration - Communication -->
+                                            <svg viewBox="0 0 400 300" class="tab-svg" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="400" height="300" rx="8" fill="#ffedd5" />
+                                                <circle cx="200" cy="110" r="45" fill="#ea580c" />
+                                                <!-- Speech bubbles -->
+                                                <path d="M185 100 H215 V115 H195 L185 125 V100" fill="#ffffff"/>
+                                                <circle cx="193" cy="108" r="1.5" fill="#ea580c"/>
+                                                <circle cx="200" cy="108" r="1.5" fill="#ea580c"/>
+                                                <circle cx="207" cy="108" r="1.5" fill="#ea580c"/>
+                                                <!-- Phone decoration -->
+                                                <rect x="140" y="170" width="120" height="90" rx="10" fill="#ffffff" stroke="#ea580c" stroke-width="2"/>
+                                                <rect x="150" y="180" width="100" height="55" rx="4" fill="#fff7ed"/>
+                                                <circle cx="200" cy="247" r="5" fill="#ea580c"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tab Secretaria -->
+                            <div class="tab-content" id="secretaria">
+                                <div class="tab-grid">
+                                    <div class="tab-text">
+                                        <h3>Secretaria Rápida e Sem Papel</h3>
+                                        <p>Reduza as filas de matrículas no início do ano. Centralize documentos, matrículas, turmas e históricos em um banco de dados integrado, otimizando o fluxo de trabalho da equipe de secretaria.</p>
+                                        <ul class="list-checked">
+                                            <li>Processo de matrículas e rematrículas online</li>
+                                            <li>Armazenamento seguro de documentos digitalizados</li>
+                                            <li>Geração imediata de declarações, contratos e históricos</li>
+                                            <li>Montagem rápida de horários e alocação de salas</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-visual">
+                                        <div class="illustration-box">
+                                            <!-- SVG Illustration - Secretary -->
+                                            <svg viewBox="0 0 400 300" class="tab-svg" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="400" height="300" rx="8" fill="#fae8ff" />
+                                                <circle cx="200" cy="110" r="45" fill="#c026d3" />
+                                                <!-- File folder icon -->
+                                                <path d="M185 100 H215 L220 105 H225 V125 H185 V100" fill="#ffffff"/>
+                                                <!-- Papers lines -->
+                                                <rect x="110" y="180" width="180" height="70" rx="6" fill="#ffffff"/>
+                                                <line x1="130" y1="200" x2="270" y2="200" stroke="#c026d3" stroke-width="2" stroke-linecap="round"/>
+                                                <line x1="130" y1="215" x2="270" y2="215" stroke="#e9d5ff" stroke-width="2" stroke-linecap="round"/>
+                                                <line x1="130" y1="230" x2="200" y2="230" stroke="#e9d5ff" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Economia / ROI -->
+        <section class="section economy" id="economia">
+            <div class="container">
+                <div class="grid grid-2-center">
+                    <div class="economy-text">
+                        <span class="section-tagline">Gestão Inteligente & Economia</span>
+                        <h2>Um investimento que se paga sozinho</h2>
+                        <p>Entendemos que gerenciar o orçamento de uma escola é um desafio constante. Por isso, a <strong>rmescola</strong> não foi pensada apenas como uma ferramenta tecnológica, mas como uma parceira financeira estratégica.</p>
+                        
+                        <div class="savings-container">
+                            <div class="saving-item">
+                                <div class="saving-header">
+                                    <span class="saving-percentage">até 70%</span>
+                                    <h4>Redução de Inadimplência</h4>
+                                </div>
+                                <p>Com os lembretes automáticos via WhatsApp e PIX, a taxa de atraso das mensalidades despenca de forma drástica, melhorando seu fluxo de caixa mensal.</p>
+                            </div>
+                            
+                            <div class="saving-item">
+                                <div class="saving-header">
+                                    <span class="saving-percentage">100%</span>
+                                    <h4>Zero Papel e Impressão</h4>
+                                </div>
+                                <p>Substitua boletins, provas, relatórios diários de comportamento, agendas de recados físicas e comunicados em papel por soluções digitais. Reduza drasticamente o gasto anual da escola com gráficas e papelaria.</p>
+                            </div>
+                        </div>
+
+                        <div class="economy-notice">
+                            <p><strong>Garantia de Preço Justo:</strong> Nosso objetivo é democratizar a tecnologia escolar. Ajustamos nossos planos com base no número de alunos matriculados para garantir que sua escola pague apenas pelo que realmente usa.</p>
+                        </div>
+                    </div>
+                    <div class="economy-visual">
+                        <div class="economy-card animate-on-scroll">
+                            <div class="card-glow"></div>
+                            <h3>Simule a Economia Anual</h3>
+                            <p class="simulation-subtitle font-sm">Veja quanto sua escola deixa de gastar com processos analógicos</p>
+                            
+                            <div class="calculator-group">
+                                <label for="studentCount">Número de Alunos:</label>
+                                <div class="slider-container">
+                                    <input type="range" id="studentCount" min="50" max="1500" value="300" step="10" class="slider">
+                                    <span class="slider-value" id="studentCountValue">300 Alunos</span>
+                                </div>
+                            </div>
+                            
+                            <div class="calculator-results">
+                                <div class="result-box">
+                                    <span>Gasto Médio Atual (Papel, SMS, Perda de tempo)</span>
+                                    <strong class="text-danger" id="currentExpense">R$ 1.500 /mês</strong>
+                                </div>
+                                <div class="result-box highlighted">
+                                    <span>Mensalidade Estimada rmescola</span>
+                                    <strong class="text-success" id="rmescolaExpense">R$ 290 /mês</strong>
+                                </div>
+                                <div class="result-box total-saving">
+                                    <span>Economia Anual Estimada</span>
+                                    <strong class="accent-text" id="annualSaving">R$ 14.520 /ano</strong>
+                                </div>
+                            </div>
+
+                            <a href="#contato" class="btn btn-primary btn-block text-center mt-lg">Quero Economizar Agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos de Clientes -->
+        <section class="section testimonials bg-light" id="depoimentos">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">Quem usa, aprova</span>
+                    <h2>O que os diretores e gestores dizem</h2>
+                    <p class="section-subtitle">Descubra como a rmescola já facilitou o dia a dia e equilibrou as contas de diversas instituições de ensino.</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <!-- Depoimento 1 -->
+                    <div class="card testimonial-card animate-on-scroll">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">
+                            "A transição para o rmescola foi surpreendente. Nós tínhamos receio de que os professores teriam dificuldade para se adaptar, mas em menos de uma semana todos já dominavam o diário de classe. E o financeiro ficou excelente, diminuímos a inadimplência em mais de 50%!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar av-purple">MA</div>
+                            <div class="author-info">
+                                <strong>Maria de Almeida</strong>
+                                <span>Diretora Pedagógica | Colégio Nova Era</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 2 -->
+                    <div class="card testimonial-card animate-on-scroll">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">
+                            "Procurávamos um sistema que fosse realmente seguro por conta da LGPD, mas os preços do mercado eram proibitivos. O rmescola resolveu tudo: é extremamente robusto, seguro, e a mensalidade cabe no nosso orçamento sem nenhum sacrifício. Recomendo muito!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar av-teal">RC</div>
+                            <div class="author-info">
+                                <strong>Roberto Cardoso</strong>
+                                <span>Diretor Administrativo | Centro Educacional Crescer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 3 -->
+                    <div class="card testimonial-card animate-on-scroll">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">
+                            "O suporte é sensacional e a plataforma é super leve e intuitiva. Os pais dos alunos adoraram receber as notas e as frequências diretamente no celular. Economizamos uma quantia absurda que antes gastávamos imprimindo boletins e enviando circulares de papel."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar av-orange">FS</div>
+                            <div class="author-info">
+                                <strong>Fernanda Souza</strong>
+                                <span>Coordenadora Geral | Escola Aprender</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção FAQ -->
+        <section class="section faq" id="faq">
+            <div class="container container-sm">
+                <div class="section-header text-center">
+                    <span class="section-tagline">Restou alguma dúvida?</span>
+                    <h2>Perguntas Frequentes</h2>
+                    <p class="section-subtitle">Reunimos as respostas para as perguntas mais comuns dos gestores.</p>
+                </div>
+
+                <div class="faq-accordion">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>O teste gratuito realmente não tem custos?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! O teste gratuito de 14 dias dá acesso completo a todas as ferramentas do sistema rmescola. Não solicitamos dados de cartão de crédito no cadastro e não há qualquer compromisso de fidelidade ou cobrança automática após o período.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Como é garantida a segurança dos dados dos alunos?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Utilizamos servidores em nuvem de nível corporativo (com infraestrutura AWS/Google Cloud), criptografia SSL/TLS em todas as conexões e backups diários criptografados. Além disso, nosso sistema foi planejado em conformidade com as regras da LGPD (Lei Geral de Proteção de Dados), garantindo total privacidade e segurança jurídica para sua instituição.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Preciso de um computador muito potente para usar o sistema?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Não! A rmescola é um software 100% online (SaaS). Isso significa que você pode acessá-lo de qualquer dispositivo conectado à internet (computadores, celulares ou tablets) sem precisar instalar nenhum programa pesado. O sistema funciona de maneira rápida e leve em qualquer navegador.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Como funciona o cálculo das mensalidades?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nossos valores são calculados de acordo com a faixa de alunos ativos cadastrados na sua escola. Dessa forma, pequenas escolas pagam valores menores e grandes escolas pagam taxas proporcionais à sua estrutura. Nossos planos garantem que a economia gerada pelo sistema supere o custo da mensalidade.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Vocês oferecem suporte em caso de dificuldades?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oferecemos suporte humano qualificado e rápido. Nossa equipe está disponível via WhatsApp e e-mail para ajudar você e toda a equipe da sua escola com qualquer dúvida ou configuração que precisarem, sem cobrar taxas adicionais de suporte.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulário de Contato / Conversão -->
+        <section class="section contact" id="contato">
+            <div class="container container-sm">
+                <div class="contact-box animate-on-scroll">
+                    <div class="section-header text-center">
+                        <span class="section-tagline">Comece a usar hoje</span>
+                        <h2>Teste Gratuitamente</h2>
+                        <p class="section-subtitle">Preencha o formulário abaixo e receba seu acesso exclusivo em poucos minutos. Simplifique sua gestão e melhore as finanças da sua escola agora mesmo!</p>
+                    </div>
+
+                    <form id="leadForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Seu Nome *</label>
+                                <input type="text" id="name" name="name" required placeholder="Ex: Professor Roberto">
+                            </div>
+                        </div>
+
+                        <div class="form-row grid grid-2">
+                            <div class="form-group">
+                                <label for="email">E-mail Corporativo *</label>
+                                <input type="email" id="email" name="email" required placeholder="Ex: diretor@suaescola.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefone / WhatsApp *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="Ex: (21) 98878-8305">
+                            </div>
+                        </div>
+
+                        <div class="form-row grid grid-2">
+                            <div class="form-group">
+                                <label for="schoolName">Nome da Escola *</label>
+                                <input type="text" id="schoolName" name="schoolName" required placeholder="Ex: Colégio Dom Pedro">
+                            </div>
+                            <div class="form-group">
+                                <label for="estudantes">Quantidade de Alunos *</label>
+                                <select id="estudantes" name="estudantes" required>
+                                    <option value="" disabled selected>Selecione...</option>
+                                    <option value="ate-100">Até 100 alunos</option>
+                                    <option value="100-300">De 100 a 300 alunos</option>
+                                    <option value="300-700">De 300 a 700 alunos</option>
+                                    <option value="mais-700">Mais de 700 alunos</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block text-center btn-lg mt-md">Solicitar Acesso Gratuito</button>
+                    </form>
+                    <div id="formSuccess" class="form-success-message hidden">
+                        <h4>🎉 Solicitação Enviada com Sucesso!</h4>
+                        <p>Nossa equipe entrará em contato em breve no número informado para liberar o seu acesso de teste de 14 dias.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <span class="logo-accent">rm</span>escola
+                </a>
+                <p class="footer-desc">
+                    Revolucionando a gestão pedagógica e administrativa de escolas de forma segura, simplificada e econômica.
+                </p>
+                <div class="footer-contact-info">
+                    <p>📧 contato@rmescola.com.br</p>
+                    <p>📞 (21) 98878-8305</p>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#funcionalidades">Funcionalidades</a></li>
+                    <li><a href="#economia">Economia</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Informações</h4>
+                <ul>
+                    <li><a href="#faq">Dúvidas Frequentes (FAQ)</a></li>
+                    <li><a href="#contato">Solicitar Demonstração</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Política de Privacidade (LGPD)</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 rmescola. Todos os direitos reservados. Projetado para máxima segurança escolar.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Link Button -->
+    <a href="https://api.whatsapp.com/send?phone=5521988788305&text=Olá!%20Visitei%20o%20site%20da%20rmescola%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20teste%20gratuito." class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Falar Conosco no WhatsApp">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436.002 9.858-4.417 9.86-9.856.002-2.63-1.023-5.101-2.887-6.967C16.58 1.966 14.11 .943 11.486.942c-5.441 0-9.866 4.418-9.87 9.858-.002 1.718.45 3.398 1.309 4.872L1.888 20.16l4.759-1.006zM17.487 14.39c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        </svg>
+        <span class="pulse-ring"></span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
