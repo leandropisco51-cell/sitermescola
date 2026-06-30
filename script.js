@@ -153,20 +153,37 @@ document.addEventListener('DOMContentLoaded', () => {
             const schoolName = document.getElementById('schoolName').value;
             const size = document.getElementById('estudantes').value;
             
-            // Simular chamada de API
-            console.log('--- Novo Lead rmescola ---');
-            console.log(`Responsável: ${name}`);
-            console.log(`E-mail: ${email}`);
-            console.log(`Telefone/WhatsApp: ${phone}`);
-            console.log(`Escola: ${schoolName}`);
-            console.log(`Tamanho da Escola: ${size}`);
-            
-            // Ocultar formulário com animação e mostrar sucesso
+            // Ocultar formulário com animação e mostrar sucesso imediatamente para melhor UX
             leadForm.style.display = 'none';
             formSuccess.classList.remove('hidden');
-            
-            // Rolagem suave até a mensagem de sucesso
             formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Enviar os dados para o script PHP de envio de e-mail
+            fetch('send_lead.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    phone: phone,
+                    schoolName: schoolName,
+                    estudantes: size
+                })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Falha no envio de e-mail do servidor.');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Lead enviado e e-mail disparado com sucesso:', data);
+            })
+            .catch(error => {
+                console.error('Erro ao enviar lead:', error);
+            });
         });
     }
     
